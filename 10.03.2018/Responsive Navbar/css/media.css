@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1500px){
+    nav .menu li:nth-child(7),
+    nav .menu li:nth-child(6),
+    nav .menu li:nth-child(5)
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    nav .menu li:nth-child(4)
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    nav .menu li:nth-child(3)
+    {
+        display: none;
+    }
+    header .main{
+        width: 70%;
+    }
+    #products .pro{
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 30px;
+    }
+    #products .pro:nth-child(2n){
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    nav .menu li:nth-child(1),
+    nav .menu li:nth-child(2)
+    {
+        display: none;
+    }
+
+    header .main{
+        width: 100%;
+    }
+
+    #bars{
+        display: block;
+    }
+   
+    #products .pro{
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 30px;
+    }
+
+}

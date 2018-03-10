@@ -1,0 +1,265 @@
+/* DEFAULT VALUES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* END OF DEFAULT VALUES */
+
+
+
+/* MY CLASSES */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.clearfix{
+    clear: both;
+}
+
+/* END OF MY CLASSES */
+
+/* NAVIGATION */
+nav{
+    height: 70px;
+    /* background-color: red; */
+}
+nav .brand,
+nav .navigation{
+    float: left;
+    height: 70px;
+}
+
+nav .brand{
+    width: 30%;
+    /* background-color: red; */
+}
+nav .brand img{
+    height: 60px;
+    padding-top: 10px;
+}
+
+nav .navigation{
+    width: 70%;
+}
+nav .menu > li{
+    float: left;
+}
+nav .menu > li a{
+    display: inline-block;
+    padding: 23px 27px;
+    color: #555;
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+nav .menu > li a:hover{
+    color: #70c14b;
+}
+nav .menu > li a.navIcon{
+    color: #ccc;
+    padding-right: 0px;
+}
+nav .menu > li a.navIcon i{
+    position: relative;
+    top: -5px;
+    transition: all 0.3s linear;
+}
+nav .menu > li a.navIcon i:hover{
+    color: brown;
+}
+nav .menu > li a.navIcon::before{
+    content: " ";
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    height: 25px;
+    margin-right: 20px;
+}
+
+/* Inner dropdwons */
+
+nav .menu li.hasDropdown{
+    position: relative;
+}
+nav .menu li > .menuDropdown{
+    position: absolute;
+    top: 68px;
+    left: 27px;
+    z-index: 3;
+    width: 200px;
+    background: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+nav .menu li.hasDropdown:hover .menuDropdown{
+    height: auto;
+}
+
+#bars{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    color: #ccc;
+    font-size: 1.5em;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+#dropdownNav{
+    height: 0;
+    overflow: hidden;
+    width: 83%;
+    position: absolute;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    left: 10%;
+    transition: all 0.3s ease-in-out;
+}
+#dropdownNav li a{
+    padding: 20px;
+    background-color: #555;
+    color: white;
+    display: block;
+}
+/* END OF NAVIGATION */
+
+
+/* MAIN */
+
+header{
+    height: 600px;
+    background-image: url("../images/main.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 100px;
+}
+header .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: all 0.3s linear;
+}
+header .icon:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+header .leftIcon{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+header .rightIcon{
+    right: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+header .main{
+    width: 40%;
+}
+header .main h1{
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #555;
+}
+header .main p{
+    margin: 20px 0;
+    font-size: 1.3em;
+    color: #555;
+    line-height: 35px;
+}
+header .main button.success{
+    width: 150px;
+    height: 50px;
+    background-color: #70c14b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s linear;
+}
+header .main button.success:active{
+    box-shadow: none;
+}
+header .main i{
+    font-size: 55px;
+    position: relative;
+    top: 20px;
+    margin: 0px 25px;
+}
+header .main span.wv{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+}
+header .dots{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+header .dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    cursor: pointer;
+}
+header .dot.active{
+    background: rgba(104, 9, 9, 1);
+}
+/* END OF MAIN */
+
+
+/* SECTION SECOND */
+
+#products{
+    padding-top: 50px;
+}
+#products .pro{
+    width: 24%;
+    margin-right: 1.33%;
+    float: left;
+    text-align: center;
+}
+#products .pro:nth-child(4n){
+    margin-right: 0;
+}
+#products .pro i{
+    font-size: 5em;
+    color: #ccc;
+}
+
+#products .pro h5{
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+#products .pro p{
+    color: #ccc;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* END OF SECTION SECOND */
