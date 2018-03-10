@@ -1,0 +1,118 @@
+@media only screen and (max-width:1300px){
+     .header .menu li:nth-child(9),
+     .header .menu li:nth-child(10){
+        display: none;
+    }
+    .header .menu li:nth-child(11){
+        padding-left:30%;
+    }
+    .header .logo h1{
+        width:100%;
+        text-align: center;
+    }
+    .header .logo .basliq{
+        width:100%;
+    }
+}
+@media only screen and (max-width:1200px){
+    .header .menu li:nth-child(8),
+    .header .menu li:nth-child(7)
+    {
+        display: none;
+    }
+    .header .menu li:nth-child(11){
+        padding-left:36%;
+    }
+}
+@media only screen and (max-width:1000px){
+    .header .menu li:nth-child(4),
+    .header .menu li:nth-child(6){
+        display: none;
+    }
+    .header .menu li:nth-child(11){
+        padding-left:35%;   
+    }
+    .menu .birinci{
+        display: block;
+        top: 15px;
+        left: 7px;
+    }
+    .header .menu li:nth-child(2){
+        padding-left:4%;
+    }
+}
+@media only screen and (max-width:900px){
+    .header .menu li:nth-child(2),
+    .header .menu li:nth-child(3),
+    .header .menu li:nth-child(4),
+    .header .menu li:nth-child(11),
+    .header .menu li:nth-child(13)
+    {
+        display: none;
+    }
+    .header .menu li:nth-child(5){
+        padding-left:4%; 
+    }
+    .header .menu li:nth-child(12){
+        padding-left:56%;
+    }
+}
+@media only screen and (max-width:700px){
+    .header .menu li:nth-child(5){
+        display: none;
+    }
+    .header .menu li:nth-child(12){
+        padding-left:71%;
+    }
+    .header .menu .birinci{
+        top:9px;
+        left:12px; 
+    }
+    .header .logo p{
+        display: none;
+    }
+    .main{
+        display:none;
+    }
+    .main2 .right h1,
+    .main2 .right p,
+    .main2 .right button{
+        width:100%;
+    } 
+    .main2 .right p{
+        font-size:10px;
+    }
+    .main2 .right h1{
+        font-size:15px;
+    }
+}
+@media only screen and (max-width:600px){
+    .header .menu li:nth-child(12){
+        padding-left:66%;
+    }
+    .header .menu .birinci{
+        top:9px;
+        left:12px; 
+    }
+}
+@media only screen and (max-width:500px){
+    .header .menu li:nth-child(12){
+        padding-left:62%;
+    }
+    .header .menu .birinci{
+        top:9px;
+        left:12px; 
+    }
+}
+@media only screen and (max-width:400px){
+    .header .menu li:nth-child(12){
+        padding-left:48%;
+    }
+}
+@media only screen and (max-width:300px){
+    .header .menu li:nth-child(12){
+        padding-left:38%;
+    }
+}
+
+
